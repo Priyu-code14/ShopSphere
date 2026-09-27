@@ -39,7 +39,7 @@ const products = [
         oldPrice: 699,
         rating: 4.9,
         badge: "TRENDING",
-        image: "tote bag.jpg"
+        image: "Tote Bag.jpg"
     },
 
     {
@@ -72,7 +72,7 @@ const products = [
         oldPrice: 1999,
         rating: 4.8,
         badge: "SALE",
-        image: "sneakers.jpg"
+        image: "Sneakers.jpg"
     },
 
     {
