@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere | Wishlist</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="wishlist.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                        NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand fw-bold"
+            href="index.html">
+
+            <i class="bi bi-bag-fill"></i>
+
+            ShopSphere
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarMenu">
+
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="products.html">
+
+                        Shop
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="products.html?category=Women">
+
+                        Women
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="products.html?category=Men">
+
+                        Men
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="products.html?category=Accessories">
+
+                        Accessories
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <div class="navbar-actions">
+
+                <!-- Wishlist -->
+
+                <a
+                    href="wishlist.html"
+                    class="nav-icon wishlist-active">
+
+                    <i class="bi bi-heart"></i>
+
+                    <span id="wishlistCount">
+                        0
+                    </span>
+
+                </a>
+
+
+                <!-- Cart -->
+
+                <a
+                    href="cart.html"
+                    class="nav-icon">
+
+                    <i class="bi bi-bag"></i>
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="login.html"
+                    class="login-btn">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+                    WISHLIST HEADER
+===================================================== -->
+
+<section class="wishlist-header">
+
+    <div class="container">
+
+        <span class="section-label">
+            YOUR COLLECTION
+        </span>
+
+        <h1>
+            My Wishlist
+        </h1>
+
+        <p>
+            Save your favourite products and shop them
+            whenever you're ready.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    WISHLIST SECTION
+===================================================== -->
+
+<section class="wishlist-section">
+
+    <div class="container">
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            id="wishlistProducts"
+            class="row g-4">
+
+        </div>
+
+
+        <!-- EMPTY WISHLIST -->
+
+        <div
+            id="emptyWishlist"
+            class="empty-wishlist d-none">
+
+            <i class="bi bi-heart"></i>
+
+            <h3>
+                Your Wishlist is Empty
+            </h3>
+
+            <p>
+                You haven't saved any products yet.
+            </p>
+
+            <a
+                href="products.html"
+                class="shop-now-btn">
+
+                Explore Products
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                        TOAST
+===================================================== -->
+
+<div
+    id="wishlistToast"
+    class="wishlist-toast">
+
+    <i class="bi bi-check-circle-fill"></i>
+
+    <span id="wishlistToastMessage">
+        Product added
+    </span>
+
+</div>
+
+
+
+<script src="wishlist.js"></script>
+
+</body>
+
+</html>

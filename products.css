@@ -1,0 +1,504 @@
+/* =====================================================
+                    SHOP HEADER
+===================================================== */
+
+.shop-header {
+    background: #faf9f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.shop-header .eyebrow {
+    color: #b66a00;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.shop-header h1 {
+    margin-top: 15px;
+    font-size: clamp(45px, 6vw, 70px);
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.shop-header p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #6b7280;
+    line-height: 1.8;
+}
+
+
+
+/* =====================================================
+                    SHOP SECTION
+===================================================== */
+
+.shop-section {
+    padding: 70px 0 100px;
+}
+
+
+
+/* =====================================================
+                    SHOP CONTROLS
+===================================================== */
+
+.shop-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.search-box {
+    flex: 1;
+    position: relative;
+}
+
+
+.search-box i {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+
+.search-box input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0 20px 0 48px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+
+.search-box input:focus {
+    border-color: #d97706;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.08);
+}
+
+
+
+.shop-select {
+    height: 52px;
+    min-width: 190px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0 15px;
+    background: white;
+    font-family: inherit;
+    color: #374151;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.shop-select:focus {
+    border-color: #d97706;
+}
+
+
+
+/* =====================================================
+                    RESULT ROW
+===================================================== */
+
+.result-row {
+    margin-bottom: 20px;
+}
+
+
+.result-row p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+
+/* =====================================================
+                    PRODUCT CARD
+===================================================== */
+
+.shop-product-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.shop-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.10);
+}
+
+
+
+/* =====================================================
+                    PRODUCT IMAGE
+===================================================== */
+
+.shop-product-image {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+
+.shop-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+
+.shop-product-card:hover
+.shop-product-image img {
+    transform: scale(1.07);
+}
+
+
+
+/* =====================================================
+                    BADGE
+===================================================== */
+
+.product-badge {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+    background: #d97706;
+    color: white;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+                    WISHLIST
+===================================================== */
+
+.shop-wishlist {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.95);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.shop-wishlist:hover {
+    background: #d97706;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.shop-wishlist.active {
+    background: #d97706;
+    color: white;
+}
+
+
+
+/* =====================================================
+                    PRODUCT INFORMATION
+===================================================== */
+
+.shop-product-info {
+    padding: 20px;
+}
+
+
+.shop-product-category {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+
+.shop-product-info h5 {
+    margin: 7px 0;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #111827;
+}
+
+
+.shop-rating {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+.shop-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.shop-price del {
+    color: #9ca3af;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+
+
+
+/* =====================================================
+                    ADD TO CART
+===================================================== */
+
+.add-cart-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #20252b;
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+    font-family: inherit;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.add-cart-btn:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+}
+
+
+.add-cart-btn i {
+    margin-right: 6px;
+}
+
+
+
+/* =====================================================
+                    NO PRODUCTS
+===================================================== */
+
+.no-products {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.no-products i {
+    font-size: 50px;
+    color: #d97706;
+}
+
+
+.no-products h3 {
+    margin-top: 20px;
+}
+
+
+.no-products p {
+    color: #6b7280;
+}
+
+
+
+/* =====================================================
+                        TOAST
+===================================================== */
+
+.shop-toast {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    background: #20252b;
+    color: white;
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.18);
+
+    transform: translateY(100px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.4s ease;
+
+    z-index: 9999;
+}
+
+
+.shop-toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.shop-toast i {
+    color: #22c55e;
+    font-size: 18px;
+}
+
+/* =====================================================
+            CLICKABLE PRODUCT CARD
+===================================================== */
+
+.shop-product-card {
+    cursor: pointer;
+}
+
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .shop-controls {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        flex: 100%;
+    }
+
+    .shop-select {
+        flex: 1;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+
+    .shop-header {
+        padding: 60px 0;
+    }
+
+    .shop-header h1 {
+        font-size: 45px;
+    }
+
+    .shop-section {
+        padding: 50px 0 70px;
+    }
+
+    .shop-controls {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-box,
+    .shop-select {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .shop-product-image {
+        height: 420px;
+    }
+
+}
+/* =====================================================
+        CLICK / INTERACTION FIX
+===================================================== */
+
+/* Make sure product controls are clickable */
+.product-card {
+    position: relative;
+}
+
+.product-image {
+    position: relative;
+}
+
+/* Wishlist button must stay above the image */
+.wishlist {
+    position: absolute;
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Add to cart button */
+.add-cart-btn {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Navigation must stay clickable */
+.shop-navbar {
+    position: sticky;
+    z-index: 1000;
+}
+
+.navbar-right,
+.navbar-nav,
+.navbar-brand {
+    position: relative;
+    z-index: 1001;
+}

@@ -1,0 +1,580 @@
+/* =====================================================
+                PRODUCT DETAILS PAGE
+===================================================== */
+
+.product-details-page {
+    padding: 45px 0 100px;
+    background: #ffffff;
+}
+
+
+/* =====================================================
+                    BREADCRUMB
+===================================================== */
+
+.product-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 40px;
+
+    font-size: 14px;
+
+    color: #9ca3af;
+}
+
+.product-breadcrumb a {
+    color: #6b7280;
+
+    transition: 0.3s ease;
+}
+
+.product-breadcrumb a:hover {
+    color: #b66a00;
+}
+
+.product-breadcrumb i {
+    font-size: 11px;
+}
+
+.product-breadcrumb span {
+    color: #111827;
+}
+
+
+
+/* =====================================================
+                    PRODUCT IMAGE
+===================================================== */
+
+.details-image-wrapper {
+    height: 650px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #f3f3f3;
+}
+
+.details-image-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.details-image-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+
+
+/* WISHLIST BUTTON */
+
+.details-wishlist {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+
+    z-index: 5;
+}
+
+.details-wishlist:hover {
+    background: #d97706;
+    color: white;
+
+    transform: scale(1.08);
+}
+
+.details-wishlist.active {
+    color: #e53935;
+}
+
+.details-wishlist.active:hover {
+    color: white;
+}
+
+
+
+/* BADGE */
+
+.details-badge {
+    position: absolute;
+
+    left: 20px;
+    top: 20px;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    background: #d97706;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    z-index: 5;
+}
+
+
+
+/* =====================================================
+                    PRODUCT INFO
+===================================================== */
+
+.product-details-info {
+    padding: 15px 10px;
+}
+
+
+.product-category {
+    color: #b66a00;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.product-details-info h1 {
+    margin-top: 12px;
+    margin-bottom: 15px;
+
+    font-size: clamp(34px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+
+/* =====================================================
+                        RATING
+===================================================== */
+
+.details-rating {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-bottom: 22px;
+
+    font-size: 14px;
+}
+
+.details-rating span:first-child {
+    font-size: 17px;
+}
+
+.rating-text {
+    margin-left: 8px;
+
+    color: #9ca3af;
+}
+
+
+
+/* =====================================================
+                        PRICE
+===================================================== */
+
+.details-price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.details-price strong {
+    font-size: 30px;
+
+    color: #111827;
+}
+
+.details-price del {
+    font-size: 17px;
+
+    color: #9ca3af;
+}
+
+
+
+/* =====================================================
+                    DESCRIPTION
+===================================================== */
+
+.product-description {
+    max-width: 600px;
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.product-details-info hr {
+    border-color: #eeeeee;
+
+    margin: 30px 0;
+}
+
+
+
+/* =====================================================
+                    OPTIONS
+===================================================== */
+
+.option-section {
+    margin-bottom: 28px;
+}
+
+
+.option-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.option-title span {
+    color: #b66a00;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+
+/* SIZE BUTTONS */
+
+.size-options {
+    display: flex;
+
+    gap: 10px;
+}
+
+.size-btn {
+    width: 52px;
+    height: 48px;
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    border-radius: 8px;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.size-btn:hover {
+    border-color: #d97706;
+
+    color: #b66a00;
+}
+
+.size-btn.active {
+    background: #111827;
+
+    border-color: #111827;
+
+    color: white;
+}
+
+
+
+/* =====================================================
+                    QUANTITY
+===================================================== */
+
+.quantity-box {
+    width: 135px;
+
+    height: 48px;
+
+    margin-top: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.quantity-box button {
+    width: 42px;
+
+    height: 100%;
+
+    border: none;
+
+    background: white;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+.quantity-box button:hover {
+    background: #fff7ed;
+
+    color: #b66a00;
+}
+
+.quantity-box span {
+    font-weight: 600;
+}
+
+
+
+/* =====================================================
+                    ACTION BUTTONS
+===================================================== */
+
+.details-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+
+.add-cart-btn,
+.buy-now-btn {
+    height: 55px;
+
+    border-radius: 30px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.add-cart-btn {
+    flex: 1;
+
+    border: none;
+
+    background: #20252b;
+
+    color: white;
+}
+
+.add-cart-btn:hover {
+    background: #d97706;
+
+    transform: translateY(-3px);
+}
+
+
+.buy-now-btn {
+    flex: 1;
+
+    border: 1px solid #20252b;
+
+    background: white;
+
+    color: #20252b;
+}
+
+.buy-now-btn:hover {
+    background: #20252b;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+
+/* =====================================================
+                    PRODUCT FEATURES
+===================================================== */
+
+.product-features {
+    margin-top: 40px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.product-features > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+
+.product-features i {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #fff7ed;
+
+    color: #d97706;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+.product-features strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+
+.product-features small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .product-details-page {
+        padding-top: 30px;
+    }
+
+    .details-image-wrapper {
+        height: 600px;
+    }
+
+    .product-details-info {
+        padding: 20px 0;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .product-details-page {
+        padding: 25px 0 70px;
+    }
+
+    .product-breadcrumb {
+        margin-bottom: 25px;
+    }
+
+    .details-image-wrapper {
+        height: 500px;
+
+        border-radius: 18px;
+    }
+
+    .product-details-info h1 {
+        font-size: 36px;
+    }
+
+    .details-buttons {
+        flex-direction: column;
+    }
+
+    .add-cart-btn,
+    .buy-now-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .details-image-wrapper {
+        height: 420px;
+    }
+
+    .details-price strong {
+        font-size: 25px;
+    }
+
+    .size-btn {
+        width: 48px;
+    }
+
+}

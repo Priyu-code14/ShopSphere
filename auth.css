@@ -1,0 +1,245 @@
+/* =====================================================
+                SHOPSPHERE AUTH NAVBAR
+===================================================== */
+
+.login-btn.logged-in-user {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+
+}
+
+
+.login-btn.logged-in-user i {
+
+    font-size: 16px;
+
+}
+
+
+
+/* =====================================================
+                ACCOUNT MENU
+===================================================== */
+
+.account-menu {
+
+    position: absolute;
+
+    top: calc(100% + 12px);
+
+    right: 0;
+
+    width: 260px;
+
+    padding: 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(0, 0, 0, 0.12);
+
+    z-index: 9999;
+
+    animation:
+        accountMenuShow
+        0.2s ease;
+
+}
+
+
+@keyframes accountMenuShow {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+
+/* =====================================================
+                ACCOUNT HEADER
+===================================================== */
+
+.account-menu-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.account-menu-header > i {
+
+    font-size: 35px;
+
+    color: #b56b00;
+
+}
+
+
+.account-menu-header div {
+
+    min-width: 0;
+
+}
+
+
+.account-menu-header strong {
+
+    display: block;
+
+    color: #17191d;
+
+    font-size: 14px;
+
+}
+
+
+.account-menu-header small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #888;
+
+    font-size: 11px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* =====================================================
+                MENU LINE
+===================================================== */
+
+.account-menu hr {
+
+    margin: 14px 0;
+
+    border-color: #eeeeee;
+
+}
+
+
+
+/* =====================================================
+                LOGOUT BUTTON
+===================================================== */
+
+.account-menu-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #333;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.account-menu-item:hover {
+
+    background: #fff7eb;
+
+    color: #b56b00;
+
+}
+
+
+.account-menu-item i {
+
+    font-size: 17px;
+
+}
+
+
+
+/* =====================================================
+                NAVBAR POSITION
+===================================================== */
+
+.navbar-actions {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+}
+
+
+
+/* =====================================================
+                MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .account-menu {
+
+        right: -10px;
+
+        width: 240px;
+
+    }
+
+}

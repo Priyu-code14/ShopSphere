@@ -1,0 +1,380 @@
+/* =====================================================
+                SHOPSPHERE 404 PAGE
+===================================================== */
+
+
+/* =====================================================
+                ERROR SECTION
+===================================================== */
+
+.error-section {
+
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 70px 20px;
+
+    background: #faf9f6;
+
+}
+
+
+
+/* =====================================================
+                ERROR CONTENT
+===================================================== */
+
+.error-content {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+
+/* =====================================================
+                ERROR ICON
+===================================================== */
+
+.error-icon {
+
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff7eb;
+
+    color: #b56b00;
+
+    font-size: 38px;
+
+    animation: floatIcon 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floatIcon {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+}
+
+
+
+/* =====================================================
+                404 NUMBER
+===================================================== */
+
+.error-number {
+
+    color: #17191d;
+
+    font-size: clamp(90px, 15vw, 170px);
+
+    line-height: 0.9;
+
+    font-weight: 700;
+
+    letter-spacing: -8px;
+
+}
+
+
+
+/* =====================================================
+                ERROR LABEL
+===================================================== */
+
+.error-label {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #b56b00;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+
+/* =====================================================
+                ERROR HEADING
+===================================================== */
+
+.error-content h1 {
+
+    margin: 15px 0;
+
+    color: #111827;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =====================================================
+                ERROR DESCRIPTION
+===================================================== */
+
+.error-content p {
+
+    max-width: 550px;
+
+    margin: 0 auto 30px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* =====================================================
+                ERROR BUTTONS
+===================================================== */
+
+.error-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.error-primary-btn,
+.error-secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 160px;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+/* PRIMARY BUTTON */
+
+.error-primary-btn {
+
+    background: #17191d;
+
+    color: #ffffff;
+
+}
+
+
+.error-primary-btn:hover {
+
+    background: #b56b00;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* SECONDARY BUTTON */
+
+.error-secondary-btn {
+
+    background: #ffffff;
+
+    color: #333333;
+
+    border: 1px solid #dddddd;
+
+}
+
+
+.error-secondary-btn:hover {
+
+    border-color: #b56b00;
+
+    color: #b56b00;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =====================================================
+                    BACK LINK
+===================================================== */
+
+.back-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 25px;
+
+    color: #777777;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.back-link:hover {
+
+    color: #b56b00;
+
+}
+
+
+
+/* =====================================================
+                    FOOTER
+===================================================== */
+
+.error-footer {
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    background: #17191d;
+
+}
+
+
+.error-footer p {
+
+    margin: 0;
+
+    color: #aaaaaa;
+
+    font-size: 12px;
+
+}
+
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .error-section {
+
+        min-height: calc(100vh - 120px);
+
+        padding: 50px 15px;
+
+    }
+
+
+    .error-number {
+
+        font-size: 100px;
+
+        letter-spacing: -5px;
+
+    }
+
+
+    .error-content h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .error-content p {
+
+        font-size: 14px;
+
+    }
+
+
+    .error-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .error-primary-btn,
+    .error-secondary-btn {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}
