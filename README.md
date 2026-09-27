@@ -9,7 +9,9 @@
 
 ## 🌐 Live Demo
 
-**Live Demo:** Add your GitHub Pages link here after deployment.
+🚀 **[View ShopSphere Live Website](https://priyu-code14.github.io/ShopSphere/)**
+
+Explore the live e-commerce frontend directly in your browser.
 
 ## 📸 Screenshots
 
